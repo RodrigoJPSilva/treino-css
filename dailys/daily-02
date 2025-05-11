@@ -1,0 +1,35 @@
+<div class=gr1 id="sq1"></div>
+<div class=gr1 id="sq2"></div>
+<div class=gr2 id="sq3"></div>
+<div class=gr2 id="sq4"></div>
+<div class=gr1 id="sq5"></div>
+<style>
+  body {
+    background: #4C6B50;
+    display: grid;
+    grid-template: repeat(5,60px) / 60px 60px 80px 80px 60px 60px;
+    margin: 0;
+  }
+  
+.gr1 {
+   background: #F7EC7D;
+}
+.gr2 {
+  background: #4C6B50;
+}
+#sq1 {
+  grid-area: 1 / 4 / 6 / 7;
+}
+#sq2 {
+  grid-area: 2 / 2 / 5 / 4;
+}
+#sq3 {
+  grid-area: 3 / 3;
+}
+#sq4 {
+  grid-area: 2 / 4 / 5 / 6;
+}
+#sq5 {
+  grid-area: 3 / 4;
+}
+</style>
