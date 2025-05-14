@@ -1,0 +1,70 @@
+<div id="pac"></div>
+<div id="ghost"></div>
+<div class="bal" class id="fd1"></div>
+<div class="bal" id="fd2"></div>
+<div class="bal" id="fd3"></div>
+<div id="sq1"></div>
+<div class="invi" id="sq2"></div>
+<div class="invi" id="sq3"></div>
+<div class="invi" id="sq4"></div>
+<style>
+  body{
+    display: grid;
+    grid-template: repeat(5,60px) / 60px 60px 45px repeat(3,10px 20px) 25px 60px 60px;
+    background: #000000;
+    margin: 0;
+  }
+  div {
+    background: #dd6b4d;
+    border-radius: 50%;
+    position: relative;
+  }
+  #pac {
+    grid-area: 3 / 2;
+    background: #E0E246;
+  }
+  .invi {
+    border-radius: 0;
+    transform: rotate(45deg);
+    background: #000000;
+    grid-area: 3 / 11;
+    top: 60px;
+  }
+  #sq1 {
+    grid-area: 3 / 3;
+    bottom: 5px;
+    right: 18px;
+    border-radius: 0;
+    transform: rotate(45deg);
+    background: #000000;
+  }
+  #sq3 {
+    left: 20px;
+  } 
+  #sq4 {
+    right: 20px;
+  }
+  #ghost {
+    background: #C74E4E;
+  }
+.bal {
+  display: flex;
+  background: #FFFFFF;
+  max-height: 10px;
+  margin-top: 25px;
+  z-index: 1;
+}
+#fd1 {
+  grid-area: 3 / 4;
+}
+#fd2 {
+  grid-area: 3 / 6;
+}
+#fd3 {
+  grid-area: 3 / 8;
+}
+#ghost {
+  grid-area: 3 / 11;
+  border-radius: 50% 50% 0 0;
+}
+</style>
